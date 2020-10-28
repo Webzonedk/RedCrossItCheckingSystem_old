@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace RedCrossItCheckingSystem.DAL
 {
-    public class DbManagere
+    public class DbManager
     {
     }
 }
