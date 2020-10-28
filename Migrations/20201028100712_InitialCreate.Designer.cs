@@ -7,10 +7,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using udlejningsboliger.Data;
 
-namespace udlejningsboliger.Migrations
+namespace RedCrossItCheckingSystem.Migrations
 {
     [DbContext(typeof(udlejningsboligerDbContext))]
-    [Migration("20201023083636_InitialCreate")]
+    [Migration("20201028100712_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

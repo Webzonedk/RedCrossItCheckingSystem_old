@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using udlejningsboliger.Data;
 
-namespace udlejningsboliger.Migrations
+namespace RedCrossItCheckingSystem.Migrations
 {
     [DbContext(typeof(udlejningsboligerDbContext))]
     partial class udlejningsboligerDbContextModelSnapshot : ModelSnapshot

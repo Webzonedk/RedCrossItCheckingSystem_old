@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace udlejningsboliger.Migrations
+namespace RedCrossItCheckingSystem.Migrations
 {
     public partial class InitialCreate : Migration
     {
