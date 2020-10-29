@@ -5,23 +5,23 @@ using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using udlejningsboliger.Areas.Identity.Data;
-using udlejningsboliger.Data;
+using RedCrossItCheckingSystem.Areas.Identity.Data;
+using RedCrossItCheckingSystem.Data;
 
-[assembly: HostingStartup(typeof(udlejningsboliger.Areas.Identity.IdentityHostingStartup))]
-namespace udlejningsboliger.Areas.Identity
+[assembly: HostingStartup(typeof(RedCrossItCheckingSystem.Areas.Identity.IdentityHostingStartup))]
+namespace RedCrossItCheckingSystem.Areas.Identity
 {
     public class IdentityHostingStartup : IHostingStartup
     {
         public void Configure(IWebHostBuilder builder)
         {
             builder.ConfigureServices((context, services) => {
-                services.AddDbContext<udlejningsboligerDbContext>(options =>
+                services.AddDbContext<RedCrossItCheckingSystem.Data.RedCrossItCheckingSystemDbContext>(options =>
                     options.UseSqlServer(
-                        context.Configuration.GetConnectionString("udlejningsboligerDbContextConnection")));
+                        context.Configuration.GetConnectionString("RedCrossItCheckingSystemDbContextConnection")));
 
                 services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                    .AddEntityFrameworkStores<udlejningsboligerDbContext>();
+                    .AddEntityFrameworkStores<RedCrossItCheckingSystem.Data.RedCrossItCheckingSystemDbContext>();
             });
         }
     }

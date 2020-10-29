@@ -5,13 +5,13 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using udlejningsboliger.Areas.Identity.Data;
+using RedCrossItCheckingSystem.Areas.Identity.Data;
 
-namespace udlejningsboliger.Data
+namespace RedCrossItCheckingSystem.Data
 {
-    public class udlejningsboligerDbContext : IdentityDbContext<ApplicationUser>
+    public class RedCrossItCheckingSystemDbContext : IdentityDbContext<ApplicationUser>
     {
-        public udlejningsboligerDbContext(DbContextOptions<udlejningsboligerDbContext> options)
+        public RedCrossItCheckingSystemDbContext(DbContextOptions<RedCrossItCheckingSystemDbContext> options)
             : base(options)
         {
         }

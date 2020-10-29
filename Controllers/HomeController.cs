@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using udlejningsboliger.Models;
+using RedCrossItCheckingSystem.Models;
 
-namespace udlejningsboliger.Controllers
+namespace RedCrossItCheckingSystem.Controllers
 {
     public class HomeController : Controller
     {

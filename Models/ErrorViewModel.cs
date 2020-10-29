@@ -1,6 +1,6 @@
 using System;
 
-namespace udlejningsboliger.Models
+namespace RedCrossItCheckingSystem.Models
 {
     public class ErrorViewModel
     {

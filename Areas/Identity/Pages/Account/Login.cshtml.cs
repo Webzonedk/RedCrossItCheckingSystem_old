@@ -11,9 +11,9 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using udlejningsboliger.Areas.Identity.Data;
+using RedCrossItCheckingSystem.Areas.Identity.Data;
 
-namespace udlejningsboliger.Areas.Identity.Pages.Account
+namespace RedCrossItCheckingSystem.Areas.Identity.Pages.Account
 {
     [AllowAnonymous]
     public class LoginModel : PageModel

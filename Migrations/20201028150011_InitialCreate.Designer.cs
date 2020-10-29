@@ -5,12 +5,12 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using udlejningsboliger.Data;
+using RedCrossItCheckingSystem.Data;
 
 namespace RedCrossItCheckingSystem.Migrations
 {
-    [DbContext(typeof(udlejningsboligerDbContext))]
-    [Migration("20201028100712_InitialCreate")]
+    [DbContext(typeof(RedCrossItCheckingSystemDbContext))]
+    [Migration("20201028150011_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -156,7 +156,7 @@ namespace RedCrossItCheckingSystem.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("udlejningsboliger.Areas.Identity.Data.ApplicationUser", b =>
+            modelBuilder.Entity("RedCrossItCheckingSystem.Areas.Identity.Data.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -238,7 +238,7 @@ namespace RedCrossItCheckingSystem.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("udlejningsboliger.Areas.Identity.Data.ApplicationUser", null)
+                    b.HasOne("RedCrossItCheckingSystem.Areas.Identity.Data.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -247,7 +247,7 @@ namespace RedCrossItCheckingSystem.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("udlejningsboliger.Areas.Identity.Data.ApplicationUser", null)
+                    b.HasOne("RedCrossItCheckingSystem.Areas.Identity.Data.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -262,7 +262,7 @@ namespace RedCrossItCheckingSystem.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("udlejningsboliger.Areas.Identity.Data.ApplicationUser", null)
+                    b.HasOne("RedCrossItCheckingSystem.Areas.Identity.Data.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -271,7 +271,7 @@ namespace RedCrossItCheckingSystem.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("udlejningsboliger.Areas.Identity.Data.ApplicationUser", null)
+                    b.HasOne("RedCrossItCheckingSystem.Areas.Identity.Data.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
